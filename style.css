@@ -63,6 +63,7 @@ h2 {
 }
 
 .heading-primary {
+  color: darkslateblue;
   font-weight: 400;
   font-size: 3.5rem;
   letter-spacing: 7px;
@@ -179,13 +180,35 @@ h2 {
 }
 
 .footer {
-  background: #969696;
+  background: darkslateblue;
   clip-path: polygon(0 8vh, 100% 0, 100% 100%, 0 100%);
-  background-color: rgb(240, 240, 240);
+  color: rgba(255, 255, 255, 0.959);
+  min-height: 350px;
 }
 
 .footer-box {
   padding-top: 13vh;
+}
+
+.social {
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.social div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 3;
+}
+
+.social i {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1550px) {
@@ -264,6 +287,28 @@ h2 {
   .card {
     width: 90vw;
     margin-right: 0;
+  }
+
+  .card-view-project {
+    font-size: 1.1rem;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .social i {
+    font-size: 3.2rem;
+  }
+
+  .social div {
+    margin: 35px auto;
+  }
+
+  .footer-box {
+    padding-top: 6vh;
   }
 }
 
