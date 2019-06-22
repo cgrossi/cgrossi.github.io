@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 17px;
@@ -277,7 +282,7 @@ h2 {
     display: none;
     position: fixed;
     top: 2vh;
-    right: 4vw;
+    right: 6vw;
     width: 90vw;
     height: 50vh;
     background-color: rgba(240, 240, 240, 0.966);
