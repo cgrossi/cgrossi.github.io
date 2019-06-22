@@ -26,6 +26,14 @@ h2 {
   background-color: darkslateblue;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.exit {
+  display: none;
+}
+
 .nav ul {
   display: flex;
   list-style-type: none;
@@ -33,6 +41,7 @@ h2 {
 }
 
 .nav-item a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.959);
   padding-left: 30px;
@@ -43,14 +52,14 @@ h2 {
 }
 
 .header {
-  background-color: rgb(248, 248, 248);
+  background-color: darkslateblue;
   height: 70vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
 }
 
 .heading-text-box {
-  border-left: 10px solid darkslateblue;
+  border-left: 10px solid rgb(255, 255, 255);
   width: 70vw;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -63,7 +72,7 @@ h2 {
 }
 
 .heading-primary {
-  color: darkslateblue;
+  color: white;
   font-weight: 400;
   font-size: 3.5rem;
   letter-spacing: 7px;
@@ -71,11 +80,12 @@ h2 {
 }
 
 .heading-sub {
-  color: rgb(187, 187, 187);
+  color: rgba(255, 255, 255, 0.596);
   animation: fadeIn 1s ease-in;
 }
 
 .gears {
+  color: white;
   position: absolute;
   top: 12%;
   left: 6%;
@@ -108,6 +118,7 @@ h2 {
 }
 
 .work h2 {
+  color: rgb(88, 88, 88);
   margin: 20px 0 50px 0;
   font-size: 2.75rem;
   font-weight: 400;
@@ -158,14 +169,20 @@ h2 {
 .card-description {
   line-height: 1.4;
   padding-top: 15px;
+  padding-bottom: 94px;
   color: rgb(95, 95, 95);
 }
 
 .card-view-project {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   padding-top: 35px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: darkslateblue;
   font-weight: 700;
   text-transform: uppercase;
@@ -229,10 +246,6 @@ h2 {
 }
 
 @media screen and (max-width: 1240px) {
-  /* body {
-    text-align: center;
-  } */
-
   .header {
     height: 55vh;
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
@@ -250,6 +263,46 @@ h2 {
 
   .nav {
     display: none;
+    position: absolute;
+    top: 2vh;
+    right: 4vw;
+    width: 90vw;
+    height: 50vh;
+    background-color: rgba(240, 240, 240, 0.966);
+    border-radius: 5px;
+    z-index: 3;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav .nav-item a {
+    color: darkslateblue;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  body .hamburger-menu {
+    position: absolute;
+    right: 10vw;
+    top: 7vh;
+    display: inline-block;
+    color: white;
+    font-size: 2.8rem;
+    z-index: 5;
+  }
+
+  .exit {
+    position: absolute;
+    color: darkslateblue;
+    top: 14px;
+    right: 18px;
+    display: inline-block;
+    font-size: 35px;
   }
 
   .heading-text-box {
@@ -263,7 +316,7 @@ h2 {
 
   .work h2 {
     font-size: 2.3rem;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.3;
     margin-bottom: 30px;
   }
@@ -277,17 +330,18 @@ h2 {
   .heading-sub {
     line-height: 1.3;
   }
-
-  .footer {
-  }
 }
 
 @media screen and (max-width: 724px) {
+  .header {
+    height: 75vh;
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+  }
   .heading-text-box {
     border-left: none;
     display: flex;
     flex-direction: column;
-    top: 47%;
+    top: 51%;
   }
 
   .gears {
@@ -319,8 +373,8 @@ h2 {
   }
 
   .g3 {
-    top: 32px;
-    left: 12px;
+    top: 37px;
+    left: 11px;
     font-size: 2rem;
     animation: gearTurn 5s linear infinite;
   }
