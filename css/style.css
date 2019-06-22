@@ -30,6 +30,10 @@ h2 {
   display: none;
 }
 
+.show {
+  display: inline-block !important;
+}
+
 .exit {
   display: none;
 }
@@ -239,6 +243,14 @@ h2 {
   font-size: 2rem;
 }
 
+.fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease-in;
+}
+
 @media screen and (max-width: 1550px) {
   .card {
     width: 40%;
@@ -263,7 +275,7 @@ h2 {
 
   .nav {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 2vh;
     right: 4vw;
     width: 90vw;
@@ -287,12 +299,23 @@ h2 {
   }
 
   body .hamburger-menu {
-    position: absolute;
-    right: 10vw;
-    top: 7vh;
+    position: fixed;
+    right: 30px;
+    top: 30px;
     display: inline-block;
     color: white;
     font-size: 2.8rem;
+    z-index: 6;
+  }
+
+  .hamburger-box {
+    position: fixed;
+    right: 23px;
+    top: 23px;
+    height: 54px;
+    width: 54px;
+    background-color: darkslateblue;
+    border-radius: 5px;
     z-index: 5;
   }
 
@@ -424,5 +447,15 @@ h2 {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
