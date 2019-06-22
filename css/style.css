@@ -62,7 +62,7 @@ h2 {
 }
 
 .header {
-  background-color: darkslateblue;
+  background-color: #483d8b;
   height: 70vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
