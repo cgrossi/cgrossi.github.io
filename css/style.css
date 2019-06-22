@@ -253,11 +253,11 @@ h2 {
 }
 
 .fadeIn {
-  animation: fadeIn 0.7s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 
 .fadeOut {
-  animation: fadeOut 0.7s ease-in;
+  animation: fadeOut 0.3s ease-in;
 }
 
 @media screen and (max-width: 1550px) {

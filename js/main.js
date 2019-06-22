@@ -19,7 +19,7 @@ function toggleMenu() {
                         ham.setAttribute('style', 'opacity: 1; z-index: 3');
                         hamBox.setAttribute('style', 'opacity: 1; z-index: 3');
                         nav.classList.remove('fadeOut');
-                }, 700);
+                }, 300);
         });
 }
 
