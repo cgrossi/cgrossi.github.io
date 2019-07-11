@@ -234,6 +234,13 @@ h2 {
   width: 100%;
 }
 
+.social a,
+.social a:visited,
+.social a:active {
+  color: white;
+  text-decoration: none;
+}
+
 .social div {
   display: flex;
   flex-direction: column;
