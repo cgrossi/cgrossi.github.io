@@ -86,12 +86,10 @@ h2 {
   font-weight: 400;
   font-size: 3.5rem;
   letter-spacing: 7px;
-  animation: fadeIn 1s ease-in;
 }
 
 .heading-sub {
   color: rgba(255, 255, 255, 0.596);
-  animation: fadeIn 1s ease-in;
 }
 
 .gears {
@@ -300,8 +298,8 @@ h2 {
     display: none;
     position: fixed;
     top: 2vh;
-    right: 6vw;
-    width: 90vw;
+    right: 4vw;
+    width: 87vw;
     height: 50vh;
     background-color: rgba(240, 240, 240, 0.966);
     border-radius: 5px;
@@ -466,6 +464,7 @@ h2 {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateX(50px)
   }
 
   100% {
