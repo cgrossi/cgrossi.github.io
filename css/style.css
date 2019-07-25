@@ -125,9 +125,10 @@ h2 {
   padding-bottom: 3vh;
 }
 
-.work h2 {
+.work h2,
+.about h2 {
   color: rgb(88, 88, 88);
-  margin: 20px 0 50px 0;
+  margin: 20px 0 40px 0;
   font-size: 2.75rem;
   font-weight: 400;
 }
@@ -218,6 +219,44 @@ h2 {
   max-height: 100%;
   height: 100%;
   display: inline-block;
+}
+
+.about {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  min-height: 10vh;
+}
+
+.about-container {
+  display: flex;
+  min-height: 50vh;
+}
+
+.about-left,
+.about-right {
+  padding-right: 30px;
+  width: 50%;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.about-left p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 11px;
+}
+
+.about-right {
+  display: grid;
+  place-content: center end;
+}
+
+.about-right img {
+  max-width: 85%;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .footer {
@@ -434,6 +473,33 @@ h2 {
 
   .card-view-project {
     font-size: 1.1rem;
+  }
+
+  .about {
+    padding-bottom: 700px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-right {
+    order: -1;
+    display: block;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .about p {
+    line-height: 1.6;
+    font-size: 1.25rem;
   }
 
   .social {
