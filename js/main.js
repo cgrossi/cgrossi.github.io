@@ -23,8 +23,4 @@ function toggleMenu() {
         });
 }
 
-function main() {
-        toggleMenu();
-}
-
-main();
+window.addEventListener('load', toggleMenu)
