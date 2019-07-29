@@ -5,7 +5,7 @@
 - Scroll to top button
 - Fixed nav while on desktop
 - About me section
-- Footer links
+- ~~Footer links~~
 
 ## Bugs To Fix
 
