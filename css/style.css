@@ -32,7 +32,24 @@ h2 {
   background-color: darkslateblue;
 }
 
+button.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 23px;
+  right: 23px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: rgba(71, 61, 139, 0.75);
+  cursor: pointer;
+  padding: 12px 14px;
+  font-size: 2rem;
+  border-radius: 5px;
+  z-index: 6;
+}
+
 .hamburger-menu {
+  cursor: pointer;
   display: none;
 }
 
@@ -476,7 +493,7 @@ h2 {
   }
 
   .about {
-    padding-bottom: 700px;
+    padding-bottom: 150px;
   }
 
   .about-container {
