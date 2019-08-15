@@ -28,8 +28,12 @@ h2 {
 }
 
 .nav {
+  position: fixed;
+  z-index: 4;
   padding: 10px;
   background-color: darkslateblue;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button.scroll-top {
@@ -68,14 +72,15 @@ button.scroll-top {
 }
 
 .nav-item a {
+  background-color: #483d8b;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.959);
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .nav-item a:last-child {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .header {
@@ -239,7 +244,7 @@ button.scroll-top {
 }
 
 .about {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 90px;
   min-height: 10vh;
 }
@@ -266,6 +271,11 @@ button.scroll-top {
 }
 
 .about-right {
+  display: grid;
+  place-content: center end;
+}
+
+.about-left {
   display: grid;
   place-content: center end;
 }
@@ -310,10 +320,12 @@ button.scroll-top {
 
 .social span {
   display: block;
+  text-shadow: 1px 1px 2px #373737;
 }
 
 .social i {
   font-size: 2rem;
+  text-shadow: 2px 2px 2px #373737;
 }
 
 .firebase {
