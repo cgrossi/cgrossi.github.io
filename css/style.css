@@ -80,7 +80,7 @@ button.scroll-top {
 }
 
 .nav-item a:last-child {
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 .header {
