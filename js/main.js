@@ -23,8 +23,22 @@ function toggleMenu() {
         });
 }
 
-function main() {
-        toggleMenu();
+function scrollTop() {
+  const scrollTopBtn = document.querySelector('button.scroll-top')
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.display = 'block';
+  } else {
+    scrollTopBtn.style.display = 'none';
+  }
+  scrollTopBtn.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  })
 }
 
-main();
+function main() {
+  toggleMenu()
+  window.addEventListener('scroll', scrollTop)
+}
+
+window.addEventListener('load', main)

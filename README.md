@@ -17,4 +17,3 @@
 
 - Need to come up with a better implementation of the navbar on full screen
 - UX improvements needed. Show what's clickable better
-
