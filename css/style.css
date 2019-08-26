@@ -32,8 +32,10 @@ h2 {
   z-index: 4;
   padding: 10px;
   background-color: darkslateblue;
-  left: 50%;
+  left: 69%;
   transform: translateX(-50%);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 button.scroll-top {
@@ -76,7 +78,7 @@ button.scroll-top {
   font-size: 1.5rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.959);
-  margin-left: 30px;
+  margin: 0 30px;
 }
 
 .nav-item a:last-child {
