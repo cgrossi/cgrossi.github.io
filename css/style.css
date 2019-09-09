@@ -65,6 +65,7 @@ button.scroll-top {
 
 .exit {
   display: none;
+  cursor: pointer;
 }
 
 .nav ul {
@@ -114,6 +115,7 @@ button.scroll-top {
 
 .heading-sub {
   color: rgba(255, 255, 255, 0.596);
+  min-height: 3.5rem;
 }
 
 .gears {
@@ -374,6 +376,8 @@ button.scroll-top {
     background-color: rgba(240, 240, 240, 0.966);
     border-radius: 5px;
     z-index: 3;
+    left: initial;
+    transform: initial;
   }
 
   .nav ul {
@@ -385,6 +389,7 @@ button.scroll-top {
 
   .nav .nav-item a {
     color: darkslateblue;
+    background-color: transparent;
     font-size: 30px;
     font-weight: 600;
   }
@@ -417,6 +422,7 @@ button.scroll-top {
     right: 18px;
     display: inline-block;
     font-size: 35px;
+    z-index: 5;
   }
 
   .heading-text-box {

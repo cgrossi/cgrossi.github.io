@@ -11,7 +11,7 @@
 
 - Animation jitter on menu close
 - ~~Event firing to nav on window resize~~
-- Sticky menu not closing on link click
+- ~~Nav menu styling~~
 
 ## Comments
 
