@@ -2,9 +2,9 @@
 
 ## Features To Add
 
-- Scroll to top button
-- Fixed nav while on desktop
-- About me section
+- ~~Scroll to top button~~
+- ~~Fixed nav while on desktop~~ (Temporary Fix - Needs a redesign)
+- ~~About me section ~~
 - ~~Footer links~~
 
 ## Bugs To Fix
@@ -17,3 +17,4 @@
 
 - Need to come up with a better implementation of the navbar on full screen
 - UX improvements needed. Show what's clickable better
+- Rebuild using React
