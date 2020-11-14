@@ -192,7 +192,7 @@ button.scroll-top {
 }
 
 .card-text {
-  padding: 12px 12px 0 12px;
+  padding: 12px;
 }
 
 .card-text small {
@@ -225,6 +225,11 @@ button.scroll-top {
   color: darkslateblue;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-bottom: 15px;
 }
 
 .card-view-project span {
