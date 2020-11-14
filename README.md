@@ -4,12 +4,13 @@
 
 - ~~Scroll to top button~~
 - ~~Fixed nav while on desktop~~ (Temporary Fix - Needs a redesign)
-- ~~About me section ~~
+- ~~About me section~~
 - ~~Footer links~~
 
 ## Bugs To Fix
 
 - Animation jitter on menu close
+- About me section layout buggy on certain devices
 - ~~Event firing to nav on window resize~~
 - ~~Nav menu styling~~
 
