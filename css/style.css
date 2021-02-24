@@ -286,7 +286,7 @@ button.scroll-top {
 
 .about-right {
   display: grid;
-  place-content: center end;
+  place-content: start end;
 }
 
 .about-left {
